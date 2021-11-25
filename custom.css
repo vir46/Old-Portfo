@@ -17,7 +17,9 @@ body{
     height: 100%;
 }
 
-
+.logoimggithub{
+    width: 100%;
+}
 
 .navbar-start{
     margin-right: 0px;
