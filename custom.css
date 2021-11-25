@@ -1,3 +1,99 @@
 body{
     margin: 0px;
+    background-color: black;
+}
+
+.navbar-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar{
+    background-color: black;
+    height: 6%;
+}
+.navbar-brand{
+    width: 5%;
+    height: 100%;
+}
+
+
+
+.navbar-start{
+    margin-right: 0px;
+}
+
+.typecontain {
+    padding: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.typinganimate p {
+    color: white;
+    font-weight: bolder;
+    font-size: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    animation: typing 3.5s steps(24) infinite;
+}
+.typinganimate p::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 1px;
+    background: #dadada;
+    right: 0;
+    top: 0;
+    animation: cursor 1s infinite;
+}
+
+h1 {
+    font-family: Open sans;
+    font-weight: 400;
+    font-size: 150px;
+    color: #f1f1f1;
+    display: inline-block;
+    margin-top: 100px;
+    position: relative;
+}
+h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 3px;
+    background: #dadada;
+    right: -15px;
+    top: 0;
+    animation: cursor 1s infinite;
+}
+
+@keyframes typing {
+    0%{
+        width: 0%;
+    }
+    80%{
+        width: 100%;
+    }
+    99%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
