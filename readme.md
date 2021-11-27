@@ -3,12 +3,12 @@
 ###### Welcome to the source code of my portfolio.
 _Let me take you for a tour..._
 
-#
+
 ##### Technology behind
 - Vanilla Javascript
 - CSS
 - HTML 5
-#
+
 
 
 ##### Framework used
@@ -16,7 +16,4 @@ _Let me take you for a tour..._
 - Lottie Player
  
 ##### Timespent ( 2 Days )
-#
-#
-~ No Installation Required On This Project ~
->> Copyright ©️ Virtus Tan 2021
+
