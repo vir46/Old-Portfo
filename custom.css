@@ -13,6 +13,16 @@ body {
     height: 6%;
 }
 
+.navbar-start .navbar-item{
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.navbar-start .navbar-item:hover{
+    color: black;
+    background-color: grey !important;
+}
+
 .navbar-brand {
     width: 5%;
     height: 100%;
@@ -51,28 +61,6 @@ body {
     width: 1px;
     background: #dadada;
     right: 0;
-    top: 0;
-    animation: cursor 1s infinite;
-}
-
-h1 {
-    font-family: Open sans;
-    font-weight: 400;
-    font-size: 150px;
-    color: #f1f1f1;
-    display: inline-block;
-    margin-top: 100px;
-    position: relative;
-}
-
-h1::after {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 3px;
-    background: #dadada;
-    right: -15px;
     top: 0;
     animation: cursor 1s infinite;
 }
@@ -293,4 +281,20 @@ h1::after {
 
 .medsosbanner{
     margin-top: 2%;
+}
+
+.aboutme{
+    margin-top: 2vh;
+}
+
+.aboutmetitle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6vh;
+}
+
+.aboutmetitle h1{
+    color: white;
+    font-weight: bold;
+    font-size: 3vh;
 }
