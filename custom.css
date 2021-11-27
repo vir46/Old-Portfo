@@ -107,19 +107,19 @@ body {
 
 .imgbcontainer{
     margin: 4%;
-    width: 20%;
+    width: 20vw;
     height: auto;
 }
 
 .Iam {
     margin-top: 20%;
     display: flex;  
-    font: normal 70px/70px Montserrat, sans-serif;
+    font: normal 3.5vw/3.5vw Montserrat, sans-serif;
     color: #999;
 }
 
 .Iam p {
-    height: 70px;
+    height: 3.5vw;
     float: left;
     margin-right: 0.3em;
 }
@@ -128,8 +128,8 @@ body {
     float: left;
     overflow: hidden;
     /* position: relative; */
-    height: 70px;
-    top: 70px;
+    height: 3.5vw;
+    top: 3.5vw;
 }
 
 .Iam .innerIam {
@@ -162,113 +162,112 @@ body {
 
 @keyframes move {
     0% {
-        top: 0px;
+        top: 0vw;
     }
 
     20% {
-        top: -70px;
+        top: -3.5vw;
     }
 
     40% {
-        top: -140px;
+        top: -7vw;
     }
 
-    80% {
-        top: -70px;
+    70% {
+        top: -3.5vw;
     }
  
     100% {
-        top: 0px;
+        top: 0vw;
     }
 
 }
 
 @-webkit-keyframes move {
     0% {
-        top: 0px;
+        top: 0vw;
     }
 
     20% {
-        top: -70px;
+        top: -3.5vw;
     }
 
     40% {
-        top: -140px;
+        top: -7vw;
     }
 
-    80% {
-        top: -70px;
+    70% {
+        top: -3.5vw;
     }
-
+ 
     100% {
-        top: 0px;
+        top: 0vw;
     }
-
 }
 
 @-moz-keyframes move {
     0% {
-        top: 0px;
+        top: 0vw;
     }
 
     20% {
-        top: -70px;
+        top: -3.5vw;
     }
 
     40% {
-        top: -140px;
+        top: -7vw;
     }
 
-    80% {
-        top: -70px;
+    70% {
+        top: -3.5vw;
     }
-
+ 
     100% {
-        top: 0px;
+        top: 0vw;
     }
 }
 
 @-o-keyframes move {
     0% {
-        top: 0px;
+        top: 0vw;
     }
 
     20% {
-        top: -70px;
+        top: -3.5vw;
     }
 
     40% {
-        top: -140px;
+        top: -7vw;
     }
 
-    80% {
-        top: -70px;
+    70% {
+        top: -3.5vw;
     }
-
+ 
     100% {
-        top: 0px;
+        top: 0vw;
     }
 }
 
 @keyframes move {
     0% {
-        top: 0px;
+        top: 0vw;
     }
 
     20% {
-        top: -70px;
+        top: -3.5vw;
     }
 
     40% {
-        top: -140px;
+        top: -7vw;
     }
 
-    80% {
-        top: -70px;
+    70% {
+        top: -3.5vw;
     }
-
+ 
     100% {
-        top: 0px;
+        top: 0vw;
     }
 }
 .logmed{
