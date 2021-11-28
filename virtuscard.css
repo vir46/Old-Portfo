@@ -45,7 +45,7 @@
     opacity: 0.5;
     mix-blend-mode: color-dodge;
     transition: all 0.1s ease infinite;
-  }
+  } 
   
   .card:before {
     background-position: 50% 50%;
