@@ -335,7 +335,7 @@ body {
     margin: 10vh 0 0 0;
     background-image: url("https://images.unsplash.com/photo-1493515322954-4fa727e97985?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGphcGFufGVufDB8fDB8fA%3D%3D&w=1000&q=80");
     width: 100vw;
-    height: 35vh;
+    height: 17vw;
     position: relative;
     opacity: 1;
     box-shadow: inset 5px 40px 40px -16px black, inset 5px -40px 40px -16px black;
@@ -347,12 +347,43 @@ body {
 }
 
 .skillcontainer{
-    margin-top: 7vh;
+    margin-top: 4vw;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .skilltitle{
     color: white;
     font-size: 2.2vw;
+}
+
+.skilllogocontainer{
+    margin-top: 1.4vw;
+    display: flex;
+    width: 34vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.skilllogo{
+    width: 5.4vw;
+}
+
+.skilllogo:hover{
+    width: 6.5vw;
+}
+
+.ctlogo{
+    margin: 2vw 1vw 0 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skilltext{
+    color: white;
+    font-weight: bold;
 }
