@@ -15,5 +15,4 @@ _Let me take you for a tour..._
 - Bulma CSS 
 - Lottie Player
  
-##### Timespent ( 2 Days )
 
