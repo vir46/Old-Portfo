@@ -1,0 +1,83 @@
+body{
+  background-color: #423F3E;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;  
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+.imgheadtitle {
+  width: 15vw;
+}
+.headtitle{
+  margin-top: 4vw;
+  color: white;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.textheadtitle {
+  margin-right: 2vw;
+  font-family: 'Comic Sans MS';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 3vw;
+}
+
+.typinganimate p {
+  font-weight: bolder;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  animation: typing 3.5s steps(24) infinite;
+}
+
+.typinganimate p::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1px;
+  animation: cursor 1s infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+
+  80% {
+    width: 100%;
+  }
+
+  99% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
