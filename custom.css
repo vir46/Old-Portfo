@@ -1,3 +1,34 @@
+/* Loader Screen */
+
+#loader {
+  position:absolute;
+  /* margin-top: 16vw; */
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:center;
+  z-index: 1;
+  text-align: center;
+}
+
+.logoloading{
+  width: 20vw;
+}
+
+#myDiv {
+  opacity: 0;
+}
+
+.loadingtext{
+  color:white;
+  font-weight: bold;
+}
+
+/* HTML */
 body{
   background-color: #423F3E;
   animation: fadeInAnimation ease 3s;

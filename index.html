@@ -22,6 +22,7 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="custom.css">
   <link rel="icon" type="image/png" href="logo.png" />
+  <script src="scripting.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -32,10 +33,23 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title>Virtus Tan | Portfolio</title>
 </head>
 
-<body>
+<body onload="myFunction()">
+  <!-- Loading Screen -->
+    <div id="loader">
+      <div>
+        <lottie-player class="logoloading" src="https://assets6.lottiefiles.com/packages/lf20_0n0lcwod.json"
+        background="transparent" speed="1" loop autoplay></lottie-player>
+      </div>
+        <div class="typinganimate loadingtext">
+          <p>Loading Page..</p>
+        </div>
+    </div>
+  <!-- Content Div ID -->
+  <div id="myDiv">
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
@@ -76,6 +90,7 @@
         background="transparent" speed="1" loop autoplay></lottie-player>
     </div>
   </div>
+  <!-- Closing Content Div ID -->
+</div>
 </body>
-
 </html>
