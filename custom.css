@@ -1,8 +1,7 @@
 /* Loader Screen */
-
+/* 
 #loader {
   position:absolute;
-  /* margin-top: 16vw; */
   top: 0;
   bottom: 0;
   left:0;
@@ -26,7 +25,7 @@
 .loadingtext{
   color:white;
   font-weight: bold;
-}
+} */
 
 /* HTML */
 body{
@@ -45,6 +44,7 @@ body{
    }
 }
 
+/* Head Title  */
 .imgheadtitle {
   width: 15vw;
 }
@@ -57,7 +57,7 @@ body{
 }
 
 .textheadtitle {
-  margin-right: 2vw;
+  margin-right: 2.4vw;
   font-family: 'Comic Sans MS';
   display: flex;
   flex-direction: column;
@@ -112,3 +112,4 @@ body{
     opacity: 1;
   }
 }
+

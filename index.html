@@ -39,7 +39,7 @@
 
 <body onload="myFunction()">
   <!-- Loading Screen -->
-    <div id="loader">
+    <!-- <div id="loader">
       <div>
         <lottie-player class="logoloading" src="https://assets6.lottiefiles.com/packages/lf20_0n0lcwod.json"
         background="transparent" speed="1" loop autoplay></lottie-player>
@@ -47,7 +47,7 @@
         <div class="typinganimate loadingtext">
           <p>Loading Page..</p>
         </div>
-    </div>
+    </div> -->
   <!-- Content Div ID -->
   <div id="myDiv">
   <!-- Navigation Bar -->
@@ -66,7 +66,7 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Skills</a>
+          <a class="nav-link" onClick="loadHello()" href="#">Skills</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Project</a>
@@ -78,9 +78,9 @@
     </div>
   </nav>
   <!-- Head Title -->
-  <div class="headtitle">
+  <div class="headtitle" id="headtitle">
     <div class="textheadtitle">
-      <p style="  font-style: italic;">Hello !</p>
+      <p style="font-style: italic;">Hello !</p>
       <div class="typinganimate">
         <p>I'm Virtus Tan</p>
       </div>
@@ -89,6 +89,15 @@
       <lottie-player class="headtitleimage" src="https://assets6.lottiefiles.com/packages/lf20_gjsy1lag.json"
         background="transparent" speed="1" loop autoplay></lottie-player>
     </div>
+  </div>
+  <!-- Profile Viewer -->
+  <div>
+    
+  </div>
+  <!-- [ PAGE SKILLS ] -->
+  <!-- Skills -->
+  <div class="skillcontainer">
+
   </div>
   <!-- Closing Content Div ID -->
 </div>
