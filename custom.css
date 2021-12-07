@@ -1,5 +1,5 @@
 /* Loader Screen */
-/* 
+
 #loader {
   position:absolute;
   top: 0;
@@ -25,7 +25,7 @@
 .loadingtext{
   color:white;
   font-weight: bold;
-} */
+}
 
 /* HTML */
 body{
@@ -113,3 +113,23 @@ body{
   }
 }
 
+.profilecontainer{
+  margin-top: 4.4vw;
+  display:flex;
+  justify-content: center;
+}
+
+.card{
+  color:white;
+  background-color:#575757;
+}
+
+.containerphoto{
+  width: 10vw;
+}
+
+.card-text{
+  width: 80%;
+  text-align:justify;
+  font-size: 1.1vw;
+}
