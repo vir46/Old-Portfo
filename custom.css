@@ -44,6 +44,13 @@ body{
    }
 }
 
+/* Paginating */
+
+.home-page{
+  display:contents;
+}
+
+
 /* Head Title  */
 .imgheadtitle {
   width: 15vw;
@@ -113,12 +120,17 @@ body{
   }
 }
 
+/* Profile */
+
 .profilecontainer{
   margin-top: 4.4vw;
   display:flex;
   justify-content: center;
 }
 
+.card-body{
+  width: 35vw;
+}
 .card{
   color:white;
   background-color:#575757;
@@ -126,10 +138,11 @@ body{
 
 .containerphoto{
   width: 10vw;
+  margin-right: 2vw;
 }
 
 .card-text{
-  width: 80%;
+  width: 100%;
   text-align:justify;
-  font-size: 1.1vw;
+  font-size: 20px;
 }

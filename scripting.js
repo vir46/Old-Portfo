@@ -10,10 +10,6 @@ function showPage() {
     document.getElementById("myDiv").style.opacity = 1;
 }
 
-function loadHello() {
-  document.getElementById("headtitle").style.display  = "none";
-  document.getElementById("HWText").style.display  = "flex"; 
-}
 
 function gantiBahasa(){
   let class1,class2,class3;
@@ -26,5 +22,9 @@ function gantiBahasa(){
     class1[0].innerHTML = "About Me"
     class2[0].innerHTML = "Hello ! I'm Virtus Tan. I lives in Yogyakarta, Indonesia. I like everything about computers since i was in kindergarten. I'm currently pursuing my studies and careers in informatics engineering especially on web development."
   }
-  
+}
+
+function callSkill(){
+  document.getElementById("home-page").style.display  = "none";
+  document.getElementById("skill-page").style.display  = "content";
 }
