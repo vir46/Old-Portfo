@@ -27,12 +27,37 @@
   font-weight: bold;
 }
 
+/* Navigation */
+
+#homebutton{
+  animation: glowUp ease 5s infinite;
+}
+
+@keyframes glowUp {
+  0%{
+    color: white;
+  }
+  25%{
+    color: grey;
+  }
+  50%{
+    color: white;
+  }
+  75%{
+    color: grey;
+  }
+  100%{
+    color: white;
+  }
+  
+}
+
 /* HTML */
 body{
   background-color: #423F3E;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;  
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
@@ -41,15 +66,19 @@ body{
   }
   100% {
       opacity: 1;
-   }
+  }
 }
 
 /* Paginating */
 
-.home-page{
+#home-page{
   display:contents;
+  /* display:none; */
 }
 
+#myskill{
+  display:none;
+}
 
 /* Head Title  */
 .imgheadtitle {
@@ -145,4 +174,43 @@ body{
   width: 100%;
   text-align:justify;
   font-size: 20px;
+}
+
+/* Skill Page */
+.skill-page{
+  margin-top: 30px;
+  color:white;
+}
+
+/* Skills */
+
+.skill-div{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill-title{
+  font-family: Comic Sans MS;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+
+.skill-logo{
+  width: 140px;
+}
+
+.skill-image{
+  width: 46.8vw;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-logo-container{
+  margin: 50px 40px  0 40px;
 }

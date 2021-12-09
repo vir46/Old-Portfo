@@ -2,11 +2,12 @@
 var myVar;
 
 function myFunction() {
-    myVar = setTimeout(showPage, 8000);
+    myVar = setTimeout(showPage, 100);
   }
 
 function showPage() {
     document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.animation = "fadeInAnimation ease 3s";
     document.getElementById("myDiv").style.opacity = 1;
 }
 
@@ -20,11 +21,20 @@ function gantiBahasa(){
     class2[0].innerHTML = "Halo, nama saya Virtus Tan. Tinggal di Yogyakarta, Indonesia. Menyukai komputer sejak masih TK. Saat ini melanjutkan studi ke dalam ilmu komputer khususnya dalam bidang pengembangan web."
   }else{
     class1[0].innerHTML = "About Me"
-    class2[0].innerHTML = "Hello ! I'm Virtus Tan. I lives in Yogyakarta, Indonesia. I like everything about computers since i was in kindergarten. I'm currently pursuing my studies and careers in informatics engineering especially on web development."
+    class2[0].innerHTML = "Hi! My name is Virtus Tan. I live in Yogyakarta, Indonesia. I like everything about computers since I was in kindergarten. I'm currently pursuing my studies and careers in informatics engineering, especially for web development."
   }
 }
 
 function callSkill(){
   document.getElementById("home-page").style.display  = "none";
-  document.getElementById("skill-page").style.display  = "content";
+  document.getElementById("myskill").style.display = "contents";
+  document.getElementById("homebutton").style.animation = "none";
+  document.getElementById("skillbutton").style.animation = "glowUp ease 5s infinite";
+}
+
+function backHome(){
+  document.getElementById("myskill").style.display = "none";
+  document.getElementById("home-page").style.display  = "contents";
+  document.getElementById("homebutton").style.animation = "glowUp ease 5s infinite";
+  document.getElementById("skillbutton").style.animation = "none";
 }
