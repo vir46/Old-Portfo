@@ -35,24 +35,19 @@
 
 @keyframes glowUp {
   0%{
-    color: white;
-  }
-  25%{
-    color: grey;
+    text-shadow: 0 0 100px #03e9f4;
   }
   50%{
-    color: white;
-  }
-  75%{
-    color: grey;
+    text-shadow: 0 0 10px #03e9f4;
   }
   100%{
-    color: white;
+    text-shadow: 0 0 100px #03e9f4;
   }
   
 }
 
 /* HTML */
+
 body{
   background-color: #423F3E;
   animation: fadeInAnimation ease 3s;
@@ -69,7 +64,26 @@ body{
   }
 }
 
+
+.divider-cont{
+  margin-top: 50px;
+  width:100%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.divide{
+  height: 2px;
+  width:60vw;
+  background-color: white;
+}
+
 /* Paginating */
+
+#loader{
+  /* display: none; */
+} 
 
 #home-page{
   display:contents;
@@ -194,7 +208,6 @@ body{
   font-size: 40px;
   font-weight: bold;
   display: flex;
-  justify-content: center;
 }
 
 
@@ -213,4 +226,25 @@ body{
 
 .skill-logo-container{
   margin: 50px 40px  0 40px;
+}
+
+.skillclosingtitle{
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 22px !important;
+}
+
+/* Project */
+
+.project-div{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
 }
