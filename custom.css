@@ -82,16 +82,16 @@ body{
 /* Paginating */
 
 #loader{
-  /* display: none; */
+  display: none;
 } 
 
 #home-page{
-  display:contents;
-  /* display:none; */
+  /* display:contents; */
+  display:none;
 }
 
 #myskill{
-  display:none;
+  /* display:none; */
 }
 
 /* Head Title  */
