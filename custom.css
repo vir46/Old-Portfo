@@ -82,16 +82,16 @@ body{
 /* Paginating */
 
 #loader{
-  display: none;
+  /* display: none; */
 } 
 
 #home-page{
-  /* display:contents; */
-  display:none;
+  display:contents;
+  /* display:none; */
 }
 
 #myskill{
-  /* display:none; */
+  display:none;
 }
 
 /* Head Title  */
@@ -247,4 +247,34 @@ body{
   text-align: center;
   font-weight: bold;
   font-size: 40px;
+}
+
+.project-showcase{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.project{
+  border: 3px double white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 1500px;
+}
+
+.project-name{
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.project-image{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 15px;
+}
+.imageprj{
+  width: 500px;
 }
