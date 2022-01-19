@@ -3,7 +3,7 @@ var myVar,class3=0;
 
 
 function myFunction() {
-    myVar = setTimeout(showPage, 2000);
+    myVar = setTimeout(showPage, 500);
   }
 
 function showPage() {
@@ -11,7 +11,7 @@ function showPage() {
     document.getElementById("myDiv").style.animation = "fadeInAnimation ease 3s";
     document.getElementById("myDiv").style.opacity = 1;
 }
-
+ 
 
 function gantiBahasa(){
   let class1,class2;

@@ -253,14 +253,18 @@ body{
   margin-top: 20px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project{
+  margin-bottom: 30px;
   border: 3px double white;
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 1500px;
+  align-items: center;
+  width: 800px;
 }
 
 .project-name{
@@ -275,6 +279,25 @@ body{
   justify-content: center;
   margin: 15px;
 }
+
 .imageprj{
-  width: 500px;
+  width: 400px;
+  height: 225px;
+}
+
+.detailbtn{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100px;
+}
+
+/* Popup Windows [Modal] */
+
+.modal-title{
+  color:black;
+}
+
+.modal-body{
+  color:black;
+  text-align:left;
 }
