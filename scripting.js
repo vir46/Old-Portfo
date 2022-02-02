@@ -10,8 +10,9 @@ function showPage() {
     document.getElementById("loader").style.display = "none";
     document.getElementById("myDiv").style.animation = "fadeInAnimation ease 3s";
     document.getElementById("myDiv").style.opacity = 1;
+    $('#undernav').load('home.html');
 }
- 
+
 
 function gantiBahasa(){
   let class1,class2;
@@ -28,16 +29,19 @@ function gantiBahasa(){
   }
 }
 
-function callSkill(){
-  document.getElementById("home-page").style.display  = "none";
-  document.getElementById("myskill").style.display = "contents";
-  document.getElementById("homebutton").style.animation = "none";
-  document.getElementById("skillbutton").style.animation = "glowUp ease 5s infinite";
-}
 
-function backHome(){
-  document.getElementById("myskill").style.display = "none";
-  document.getElementById("home-page").style.display  = "contents";
-  document.getElementById("homebutton").style.animation = "glowUp ease 5s infinite";
-  document.getElementById("skillbutton").style.animation = "none";
+function gotoPage(elementidpass){
+    let csschange;
+    csschange = document.getElementsByClassName("nav-link");
+    for(let i=0;i<csschange.length;i++){
+      csschange[i].style.color = "grey";
+      csschange[i].style.fontWeight = "normal";
+    }
+    document.getElementById(elementidpass).style.color = "#fddb3a";
+    document.getElementById(elementidpass).style.fontWeight = "bold";
+    if(elementidpass == 'skillbutton'){
+      $('#undernav').load('skill.html');
+    }else if(elementidpass == 'homebutton'){
+      $('#undernav').load('home.html');
+    }
 }

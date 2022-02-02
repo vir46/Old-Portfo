@@ -1,20 +1,145 @@
+/* Background */
+
+
+.area{
+  background: #4e54c8;  
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+  width: 100%;
+  height:100vh;
+}
+
+.circles{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li{
+  position: absolute;
+  /* display: block; */
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  
+}
+
+.circles li:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+
+}
+
 /* Loader Screen */
 
 #loader {
-  position:absolute;
+  position: absolute;
   top: 0;
   bottom: 0;
-  left:0;
-  right:0;
-  display:flex;
-  flex-direction:column;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   z-index: 1;
   text-align: center;
 }
 
-.logoloading{
+.logoloading {
   width: 20vw;
 }
 
@@ -22,34 +147,26 @@
   opacity: 0;
 }
 
-.loadingtext{
-  color:white;
+.loadingtext {
+  color: white;
   font-weight: bold;
 }
 
 /* Navigation */
-
-#homebutton{
-  animation: glowUp ease 5s infinite;
+.nav-link{
+  color: grey;
 }
 
-@keyframes glowUp {
-  0%{
-    text-shadow: 0 0 100px #03e9f4;
-  }
-  50%{
-    text-shadow: 0 0 10px #03e9f4;
-  }
-  100%{
-    text-shadow: 0 0 100px #03e9f4;
-  }
-  
+#homebutton {
+  color: #fddb3a;
+  font-weight: bold;
+  /* animation: glowUp ease 5s infinite; */
 }
 
 /* HTML */
 
-body{
-  background-color: #423F3E;
+body {
+  background-color: #3D414B;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -57,51 +174,48 @@ body{
 
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
+
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 
-.divider-cont{
+.divider-cont {
   margin-top: 50px;
-  width:100%;
+  width: 100%;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
 }
 
-.divide{
+.divide {
   height: 2px;
-  width:60vw;
+  width: 60vw;
   background-color: white;
 }
 
 /* Paginating */
 
-#loader{
-  /* display: none; */
-} 
 
-#home-page{
-  display:contents;
+
+#home-page {
+  display: contents;
   /* display:none; */
 }
 
-#myskill{
-  display:none;
-}
 
 /* Head Title  */
 .imgheadtitle {
   width: 15vw;
 }
-.headtitle{
+
+.headtitle {
   margin-top: 4vw;
   color: white;
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
 }
@@ -165,45 +279,47 @@ body{
 
 /* Profile */
 
-.profilecontainer{
+.profilecontainer {
   margin-top: 4.4vw;
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
-.card-body{
+.card-body {
   width: 35vw;
 }
-.card{
-  color:white;
-  background-color:#575757;
+
+.card {
+  color: white;
+  background-color: #5F5E6E;
 }
 
-.containerphoto{
+.containerphoto {
   width: 10vw;
   margin-right: 2vw;
 }
 
-.card-text{
+.card-text {
   width: 100%;
-  text-align:justify;
+  text-align: justify;
   font-size: 20px;
 }
 
 /* Skill Page */
-.skill-page{
+.skill-page {
   margin-top: 30px;
-  color:white;
+  color: white;
 }
 
 /* Skills */
 
-.skill-div{
-  display:flex;
+.skill-div {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
-.skill-title{
+
+.skill-title {
   font-family: Comic Sans MS;
   font-size: 40px;
   font-weight: bold;
@@ -211,11 +327,11 @@ body{
 }
 
 
-.skill-logo{
+.skill-logo {
   width: 140px;
 }
 
-.skill-image{
+.skill-image {
   width: 46.8vw;
   margin-top: 25px;
   display: flex;
@@ -224,11 +340,11 @@ body{
   justify-content: center;
 }
 
-.skill-logo-container{
-  margin: 50px 40px  0 40px;
+.skill-logo-container {
+  margin: 50px 40px 0 40px;
 }
 
-.skillclosingtitle{
+.skillclosingtitle {
   text-align: center;
   margin-top: 20px;
   font-weight: bold;
@@ -237,19 +353,19 @@ body{
 
 /* Project */
 
-.project-div{
+.project-div {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
 }
 
-.project-title{
+.project-title {
   text-align: center;
   font-weight: bold;
   font-size: 40px;
 }
 
-.project-showcase{
+.project-showcase {
   margin-top: 20px;
   display: flex;
   justify-content: center;
@@ -257,7 +373,7 @@ body{
   align-items: center;
 }
 
-.project{
+.project {
   margin-bottom: 30px;
   border: 3px double white;
   display: flex;
@@ -267,25 +383,25 @@ body{
   width: 800px;
 }
 
-.project-name{
+.project-name {
   font-weight: bold;
   font-size: 24px;
   margin-top: 10px;
 }
 
-.project-image{
+.project-image {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 15px;
 }
 
-.imageprj{
+.imageprj {
   width: 400px;
   height: 225px;
 }
 
-.detailbtn{
+.detailbtn {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100px;
@@ -293,11 +409,11 @@ body{
 
 /* Popup Windows [Modal] */
 
-.modal-title{
-  color:black;
+.modal-title {
+  color: black;
 }
 
-.modal-body{
-  color:black;
-  text-align:left;
+.modal-body {
+  color: black;
+  text-align: left;
 }
