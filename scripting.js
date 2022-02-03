@@ -3,15 +3,15 @@ var myVar,class3=0;
 
 
 function myFunction() {
-    // myVar = setTimeout(showPage, 500);
-    showPage(); 
+    myVar = setTimeout(showPage, 1000);
+    // showPage(); 
   }
 
 function showPage() {
     document.getElementById("loader").style.display = "none"; 
     document.getElementById("myDiv").style.animation = "fadeInAnimation ease 3s";
     document.getElementById("myDiv").style.opacity = 1;
-    $('#undernav').load('skill.html');
+    $('#undernav').load('home.html');
 }
 
 
